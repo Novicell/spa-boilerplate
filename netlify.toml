@@ -6,7 +6,7 @@
   NODE_ENV="development"
 
 [[rewrite]]
-  from = "*"
+  from = "/*"
   to = "200.html"
   status = 200
   force = true
