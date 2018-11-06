@@ -5,11 +5,10 @@
 [environment]
   NODE_ENV="development"
 
-[[rewrite]]
+[[redirects]]
   from = "/*"
-  to = "200.html"
+  to = "/200.html"
   status = 200
-  force = true
 
 [[headers]]
   for = "/images/*"
