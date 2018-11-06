@@ -1,0 +1,27 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[environment]
+  NODE_ENV="development"
+
+[[rewrite]]
+  from = "*"
+  to = "200.html"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    cache-control = "public,max-age=2592000"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    cache-control = "public,max-age=2592000"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Version = "VERSION"
