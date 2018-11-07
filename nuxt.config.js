@@ -1,3 +1,4 @@
+const apiUrl = process.env.API_URL || 'http://localhost:7070'
 const pkg = require('./package')
 
 module.exports = {
@@ -42,6 +43,11 @@ module.exports = {
   ** Axios module configuration
   */
   axios: {
+    baseURL: apiUrl,
+    logLevel: 'debug',
+    proxyHeaders: false,
+    credentials: true,
+    debug: false
     // See https://github.com/nuxt-community/axios-module#options
   },
   router: {
