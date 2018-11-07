@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -27,15 +27,15 @@ html {
 .button--green {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid #aa0a40;
+  color: #aa0a40;
   text-decoration: none;
   padding: 10px 30px;
 }
 
 .button--green:hover {
   color: #fff;
-  background-color: #3b8070;
+  background-color: #aa0a40;
 }
 
 .button--grey {

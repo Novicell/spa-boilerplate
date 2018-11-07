@@ -6,11 +6,12 @@ export default async function(ctx) {
       key
     }
   })
+  const content = data.viewModel
   console.log(data)
   return (ctx.payload = {
-    seo: 'seo',
-    template: 'template',
-    content: 'this.axios',
-    nodeId: 'nodeId'
+    seo: content.seo,
+    template: content.meta.template,
+    content: content.content,
+    nodeId: content.meta.nodeId
   })
 }
